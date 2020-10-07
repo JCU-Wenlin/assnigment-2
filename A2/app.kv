@@ -1,0 +1,44 @@
+BoxLayout:
+    orientation: 'horizontal'
+    BoxLayout:
+        orientation:'vertical'
+        size_hint_x: None
+        width:200
+        Label:
+            text: "Sort By:"
+        Spinner:
+            text: 'Country'
+            values: ['Country', 'Priority', 'City']
+            on_text: ''
+
+        Label:
+            text: "Add New Place..."
+        Label:
+            text:"Name : "
+        TextInput:
+        Label:
+            text:"Country : "
+        TextInput:
+        Label:
+            text:"Priority : "
+        TextInput:
+
+        Button:
+            text:"Add Place"
+            on_press: ''
+        Button:
+            text:"Clear"
+            on_press: ''
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: "Places to visit: 1"
+            size_hint_y: None
+            height: 50
+        BoxLayout:
+            orientation: 'vertical'
+            id: entries
+        Label:
+            text:"You visited Rome."
+            size_hint_y: None
+            height:50
